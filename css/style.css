@@ -1,20 +1,20 @@
 body {
-	background: #fff;
-	/*font-family: Tahoma, sans-serif;*/
+	background: #fff;	
+    padding-top: 18px; 
 }
 div.wrapper {
 	width: 910px;
 	margin: 0 auto;
-
 }
 /*HEADER*/
 header.head_page {
 	margin-top: 18px;
 	overflow: hidden;
 	font-size: 0;
+	width: 910px;
+	margin: 0 auto;
 }
-div.top_line {
-	overflow: hidden;
+div.top_line {	
 	margin-bottom: 10px;
 }
 nav.main {
@@ -28,6 +28,13 @@ nav.main {
     margin-right: 8px;
     margin-top: 2px;
     float: right;
+    box-shadow: 1px 2px 1px -1px #b4b4b4,
+                -1px -1px 1px -1px #b4b4b4;
+}
+nav.main a div {
+	width: 24px;
+	height: 18px;
+	float: right;
 }
 div.login_signin {
 	background: url("../img/nevalyashka.png") no-repeat 6px 4px,linear-gradient(to top, #0c3357, #1f6787);
@@ -37,6 +44,8 @@ div.login_signin {
     float: right;
     margin-right: 17px;
     border-radius: 5px;
+    box-shadow: 3px 2px 1px -1px #b4b4b4,
+                2px 4px 1px -1px #b4b4b4;                            
 }
 div.login_signin p {
 	float: right;	
@@ -49,7 +58,7 @@ div.login_signin p:first-child {
 	padding: 0 2px 0 0;
 }
 div.login_signin p:first-child a {
-	font-family: "Lucida Sans Unicode";
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 12px;
 	color: #bfbfbf;
 	line-height: 26px;
@@ -58,7 +67,7 @@ div.login_signin p:nth-child(2) {
 	padding-top: 8px;
 }
 div.login_signin p:nth-child(2) a {
-	font-family: "Lucida Sans Unicode";
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 10.91px;
 	color: #fff;
 	text-decoration: none;
@@ -66,7 +75,7 @@ div.login_signin p:nth-child(2) a {
 div.login_signin input[type="submit"] {
 	border: none;
 	background: rgba(255,255,255,0);
-	font-family: "Lucida Sans Unicode";
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 10.91px;
 	color: #fff;	
 	padding: 4px 2px 4px 6px;
@@ -88,14 +97,14 @@ input[type="text"] {
 }
 input[type="text"]::-webkit-input-placeholder,
 input[type="password"]::-webkit-input-placeholder {
-	font-family: "Lucida Sans Unicode";
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 10.91px;
 	color: #97a2a6;
 	line-height: 11px;
 }
 input[type="text"]::-moz-placeholder,
 input[type="password"]::-moz-placeholder {
-	font-family: "Lucida Sans Unicode";
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 10.91px;
 	color: #97a2a6;
 }
@@ -132,14 +141,19 @@ div.phones p:nth-child(2) {
 } 
 header img {
 	margin-bottom: 9px;
+	margin-top: 10px;
+	clear: both;
 }
 /*menu under slider*/
 ul.top_menu {
-	width: 100%;
+	width: 914px;
+	margin: 0 auto;
 	min-height: 34px;
 	background: linear-gradient(to top, #010101 70%, #505860);
     border-radius: 5px;
     position: relative;
+    box-shadow: 3px 2px 1px -1px #b4b4b4,
+                2px 4px 2px -1px #b4b4b4;
 }
 ul.top_menu li {
 	float: left;	
@@ -175,7 +189,7 @@ ul.top_menu li a {
 }
 
 ul.top_menu li:nth-child(-n+5) {
-	font-family: "Lucida Sans Unicode";
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 13.64px;
 	color: #a2acb0;
 	text-transform: uppercase;
@@ -208,17 +222,19 @@ form.left_top {
 	border-radius: 20px;
 	margin-top: 5px;
 	margin-left: 3px;
-	float: left;	
+	float: left;
+	box-shadow: 5px 2px 3px -1px #b4b4b4,
+                2px 5px 3px -1px #b4b4b4;	
 }  
 form.left_top header div:nth-child(odd) {
 	
-	font-family: "Arial Black";
+	font-family: "Arial Black", Tahoma, sans-serif;
 	font-size: 10px;
 	color: #154467;
 }   
 form.left_top header div:nth-child(even) {
 	
-	font-family: "Arial Black";
+	font-family: "Arial Black", Tahoma, sans-serif;
 	font-size: 12px;
 	color: #154467;
 }
@@ -241,13 +257,17 @@ form.left_top header div:nth-child(3) {
 /*styles for text in forms*/
 .first_col li p,
 .third_col li p {
-	font-family: Arial;
+	font-family: Arial, Tahoma, sans-serif;
 	font-size: 10px;
 	color: #000;
 }
 .first_col li p span,
 .third_col li p span {
 	color: #77858b;
+	letter-spacing: 
+}
+.third_col li p span {
+	font-size: 8px;
 }
 [class*="_col"] {
 	float: left;
@@ -275,6 +295,7 @@ ul.first_col li:nth-child(3) {
 	height: 17px;
 	margin-bottom: 5px;
 	border-bottom: none;
+	border-right: none;
 	font-family: Arial;
 	font-size: 11px;
 } 
@@ -288,12 +309,12 @@ option {
 
 /*2nd column*/
 ul.sec_col {
-	margin-left: 6px;
-	margin-top: 6px;
+	margin-left: 5px;
+	margin-top: 7px;
 }
 /*3rd column*/
 form.left_top ul.third_col {
-	margin-left: 24px;	
+	margin-left: 26px;	
 }
 form.left_top ul.third_col li:first-child{
 	margin-top: 10px;
@@ -312,8 +333,8 @@ form.left_top ul.third_col li:nth-child(4) {
 }
 /*4th column*/
 ul.fourth_col {
-	margin-left: 5px;
-	margin-top: 6px;
+	margin-left: 4px;
+	margin-top: 5px;
 }
 /*style for button поиск*/
 input[type="submit"] {
@@ -332,6 +353,7 @@ form.left_top input[type="submit"] {
 }
 /*center top form*/
 form.center_top {
+	position: relative;
 	width: 192px;
 	height: 136px;
 	border: 1px solid #b6b6b7;
@@ -339,12 +361,14 @@ form.center_top {
 	float: left;
 	margin-left: 15px;
 	margin-top: 5px;
+	box-shadow: 5px 2px 3px -1px #b4b4b4,
+                2px 5px 3px -1px #b4b4b4;
 }
 form.center_top header {
 	margin-top: 4px;
 }
 form.center_top header p {
-	font-family: "Arial Black";
+	font-family: "Arial Black", Tahoma, sans-serif;
 	font-size: 10px;
 	color: #114165;
 	margin-left: 9px;
@@ -361,7 +385,7 @@ form.center_top ul:nth-child(2) li {
 	height: 16px;
 }
 form.center_top ul li p {
-	font-family: "Lucida Sans Unicode";
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 10px;
 	color: #000; 
 }
@@ -375,8 +399,7 @@ form.center_top ul li:nth-child(2) p {
 	color: #000;	
 	margin-left: 32px;
 }
-form.center_top ul li:nth-child(3) p {
-    
+form.center_top ul li:nth-child(3) p {    
     margin-left: 1px;   
 }
 #size1 {
@@ -384,6 +407,7 @@ form.center_top ul li:nth-child(3) p {
 	margin-top: 8px;
 	margin-left: 6px;
 	border-bottom: none;
+	border-right: none;
 	margin-right: 6px;
 }   
 #radius {
@@ -426,7 +450,7 @@ form.center_top input[type="checkbox"] li {
 	margin-left: 5px;	
 }
 form.center_top li label {
-	font-family: "Lucida Sans Unicode";
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 12px;
 	color: #000;
 	margin-left: 2px;
@@ -448,6 +472,7 @@ form.center_top input[type="submit"] {
 }
 /*styles for right top form*/
 form.right_top {
+	position: relative;
 	width: 266px;
 	height: 133px;
 	border: 1px solid #b6b6b7;
@@ -457,13 +482,15 @@ form.right_top {
 	margin-top: 5px;
 	border-top-left-radius: 16px;
 	border-bottom-left-radius: 16px;
+	box-shadow: 5px 2px 3px -1px #b4b4b4,
+                2px 5px 3px -1px #b4b4b4;
 }
 form.right_top header {
 	margin-top: 3px;
 	width: 120px;
 }
 form.right_top header p {
-	font-family: "Arial Black";
+	font-family: "Arial Black", Tahoma, sans-serif;
 	font-size: 12px;
 	color: #114165;
 	letter-spacing: 0.7px;
@@ -517,12 +544,106 @@ form.right_top .third_col li p {
 	margin-top: 5px;	
 }
 form.right_top .third_col li:nth-child(3) {
-	margin-top: 8px;	
+	margin-top: 8px;
+	margin-left: -2px;
+	margin-bottom: -2px;	
 }
 form.right_top .third_col li:nth-child(3) span {
-    letter-spacing: 0.2px;    
+    letter-spacing: 0.6px;    
 }
-
+form.right_top .third_col li:nth-child(2) {
+	margin-top: -1px;
+	margin-bottom: 6px;	
+}
+form.right_top .third_col li:first-child {
+	margin-left: -2px;	
+}
+/*styles for select-bosex*/
+select {
+	 -webkit-appearance: none;	
+}
+div.arrow {
+	width: 15px;
+	height: 14px;
+	background: white url("../img/select_arrow.png") no-repeat 2px 4px;
+    border: 1px solid #d0d0d0;
+    border-top: none;
+}
+.left_top {
+	position: relative;
+}
+.arrow {
+	position: absolute;
+}
+.sel1 {	
+	left: 180px;
+	top: 23px;
+}
+.sel2 {
+    left: 180px;
+    top: 45px;
+} 
+.sel3 {
+    left: 135px;
+    top: 67px;
+} 
+.sel4 {
+    left: 180px;
+    top: 89px;
+} 
+.sel5 {
+	left: 384px;
+	top: 21px;
+}
+.sel6 {
+	left: 384px;
+	top: 43px;
+}
+.sel7 {
+    left: 339px;
+    top: 65px;
+} 
+.sel8 {
+	left: 384px;
+	top: 87px;
+}
+.arrow.sel9 {
+	left: 93px;
+	top: 23px;
+	width: 13px;
+}
+.arrow.sel10 {
+	left: 87px;
+	top: 48px;
+	width: 13px;
+}
+.arrow.sel11 {
+	left: 160px;
+	top: 24px;
+	width: 13px;
+} 
+.sel12 {
+	left: 144px;
+	top: 21px;	
+} 
+.arrow.sel13 {
+	left: 138px;
+	top: 51px;
+	height: 16px;	
+} 
+.arrow.sel14 {
+	left: 145px;
+	top: 83px;		
+} 
+.arrow.sel15 {
+	left: 227px;
+	top: 44px;		
+} 
+.arrow.sel16 {
+	left: 227px;
+	top: 88px;		
+} 
+/*end styles of selects*/
 #ET {
 	width: 57px;
 	height: 15px;
@@ -532,9 +653,10 @@ form.right_top .third_col li:nth-child(3) span {
 form.right_top .third_col li:last-child {
 	padding-bottom: 3px;
 }
+
 form.right_top input[type="submit"] {
 	margin-left: 10px;
-	margin-top: 3px;	
+	margin-top: 6px;	
 }
 main:before {
 	content: '';
@@ -550,6 +672,7 @@ main:after {
 }
 main {
 	/*margin-top: 13px;*/
+	font-size: 0;
 }
 .column {
 	float: left;
@@ -565,7 +688,10 @@ div.gallery {
 /*main left column*/
 aside header {
 	border: 1px solid #8b979c;	
-	border-radius: 15px;
+	border-radius: 15px;	
+}
+aside>header {
+	box-shadow: 2px 3px 2px -1px #b4b4b4;
 }
 aside.left header div {
 	width: 20px;
@@ -580,9 +706,9 @@ main > .left header {
 	width: 179px;
 	height: 25px;
 	margin-top: 3px;
-	font-family: "Lucida Sans Unicode";
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 12.73px;
-	font-color: #114165;		
+	font-color: #114165;			
 }
 main > .left header p {
     float: left;
@@ -594,7 +720,7 @@ main .left section header {
 	height: 26px;
 	border-top-right-radius: 12px;
 	margin-top: 14px;
-	font-family: "Lucida Sans Unicode";
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 12.73px;
 	font-color: #114165;	
 }
@@ -608,7 +734,7 @@ main .left section header div {
     float: left;
 }
 main .left section header p {
-	font-family: Arial;
+	font-family: Arial, Tahoma, sans-serif;
 	font-size: 14px;
 	color: #0c3256;
 	margin-left: 4px;	
@@ -616,7 +742,7 @@ main .left section header p {
 main .left section ul {	
 	margin-left: 37px;	
 	list-style: circle;
-	font-family: Arial;
+	font-family: Arial, Tahoma, sans-serif;
 	font-size: 12px;
 	color: #869095;
 	line-height: 25px;
@@ -645,14 +771,16 @@ main .left section:last-child header p {
 }
 /*main gallery column*/
 div.gallery {
-	margin-left: 5px;
+	margin-left: 7px;
+	margin-bottom: 37px;
+	border-radius: 3px;
 }
 figure {
 	width: 146px;
 	float: left;
 }
 figure header p {
-    font-family: "Lucida Sans Unicode";
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
     text-align: center;
 }
 figure header p:first-child {
@@ -665,10 +793,10 @@ figure header p:last-child {
 }
 figure {
 	margin-top: 15px;
-	margin-left: 22px;	
+	margin-left: 20px;	
 }
 figcaption {
-	font-family: Arial;
+	font-family: Arial, Tahoma, sans-serif;
 	font-size: 16px;
 	color: #114165;
 	font-style: italic;
@@ -679,21 +807,48 @@ figcaption {
 figcaption span {
     font-size: 12px;
 }
+figure:nth-child(2) {
+	margin-left: 22px;
+}
+figure:nth-child(3) {
+	margin-left: 22px;
+}
 figure:nth-child(n+4) {
-	margin-top: 25px;		
+	margin-top: 28px;	
 }
 figure:nth-child(5),
 figure:nth-child(6),
 figure:nth-child(4){
-	margin-top: 24px;		
+	margin-top: 27px;		
 }
+figure:nth-child(4) {
+	margin-left: 20px;
+}
+figure:nth-child(5) {
+	margin-top: 26px;
+	margin-left: 21px;
+}
+figure:nth-child(6) {	
+	margin-left: 23px;
+}
+figure:nth-child(7) {
+	margin-left: 20px;
+}
+figure:nth-child(8) {
+	margin-left: 22px;
+}
+figure:nth-child(9) {
+	margin-left: 22px;
+}
+
+
 /*main 3rd column*/
 main>.right header {
 	width: 180px;
-	height: 26px;
+	height: 24px;
 	margin-top: 1px;
-	margin-left: 10px;
-	font-family: "Lucida Sans Unicode";
+	margin-left: 8px;
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 12.73px;
 	font-color: #114165;
 	border-top-right-radius: 15px;		
@@ -714,13 +869,13 @@ aside.right header p {
     letter-spacing: 0.8px;   
 }
 main .right section header {
-	width: 135px;
+	width: 133px;
 	height: 27px;
 	border-top-right-radius: 11px;
 	border-top-left-radius: 11px;
-	margin-top: 13px;
+	margin-top: 15px;
     margin-left: 24px;
-	font-family: "Lucida Sans Unicode";
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 12.73px;
 	font-color: #114165;	
 }
@@ -729,7 +884,7 @@ main .right section header div {
 	height: 22px;
 	border-radius: 50%;
 	background: url("..//img/tires_icon.png") no-repeat 45% 45%, linear-gradient(to bottom, #0c3357, #1f6787);
-    margin-left: 5px;
+    margin-left: 3px;
     margin-top: 1px;
     float: left;
 }
@@ -737,8 +892,11 @@ main .right section header p {
 	margin-top: 7px;
 }
 aside.right section .form {
-	margin-left: 35px;
+	margin-left: 34px;
 	margin-top: 5px;
+}
+#brand1 {
+    margin-top: -5px; 	
 }
 #brand2 {
     margin-top: 13px; 	
@@ -747,10 +905,13 @@ aside.right section .form {
     margin-top: 13px; 	
 }
 .right label {
-	margin-left: 14px;
-	font-family: "Lucida Sans Unicode";
+	margin-left: 12px;
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 12.73px;
-	color: #465961;
+	color: #465961;	
+}
+label[for="brand1"] {
+    line-height: 16px;
 }
 label[for="brand2"] {
     vertical-align: bottom;
@@ -768,7 +929,7 @@ main .right section:nth-child(2) header div {
 	width: 22px;
 	height: 22px;
 	border-radius: 50%;	
-    margin-left: 3px;
+    margin-left: 1px;
     margin-top: 1px;    
 }
 #brand2-2 {
@@ -776,6 +937,9 @@ main .right section:nth-child(2) header div {
 }
 #brand2-3 {
     margin-top: 15px; 	
+}
+label[for="brand2-1"] {
+    line-height: 17px;
 }
 label[for="brand2-2"] {
     vertical-align: bottom;
@@ -797,10 +961,141 @@ input[type="submit"].choice {
     color: #e5e9ea;
     font-style: normal;
     letter-spacing: 0.9px;
-    margin-top: 21px;
-    margin-left: 34px;
-
+    margin-top: 18px;
+    margin-left: 32px;
+    box-shadow: 2px 3px 2px -1px #b4b4b4;
 }
+/*sponsors bar*/
+ul.sponsors {
+	clear: both;	
+	height: 28px;	
+	margin: 0 0 4px 111px;
+	/*padding-bottom: 15px; */
+    /*background: url("../img/sprite3.png") no-repeat;*/
+    vertical-align: middle;
+}
+ul.sponsors li {
+	display: inline-block;
+	/*border: 1px solid black;*/
+	width: 97px;
+	height: 26px;
+}
+ul.sponsors li div {
+    width: 97px;
+	height: 46px;
+}
+ul.sponsors li:first-child {
+    width: 94px;
+    background: url("../img/sprite3.png") no-repeat 6px 0;                
+}
+ul.sponsors li:nth-child(2) {
+    width: 106px;
+    background: url("../img/sprite3.png") no-repeat -88px 0;
+}
+ul.sponsors li:nth-child(3) {
+	background: url("../img/sprite3.png") no-repeat -194px 0;
+	width: 92px;
+}
+ul.sponsors li:nth-child(4) {
+	background: url("../img/sprite3.png") no-repeat -286px 0;
+    width: 69px;
+}
+ul.sponsors li:nth-child(5) {
+	background: url("../img/sprite3.png") no-repeat -355px 0;	
+    width: 86px;
+}
+ul.sponsors li:nth-child(6) {
+	background: url("../img/sprite3.png") no-repeat -441px 0;
+	width: 80px;
+}
+ul.sponsors li:nth-child(7) {
+	background: url("../img/sprite3.png") no-repeat -521px 0;
+    width: 74px;
+}
+ul.sponsors li:last-child {
+	background: url("../img/sprite3.png") no-repeat -595px 0;
+    width: 80px;
+}
+
+
+ul.sponsors li:first-child:hover { 
+    background: url("../img/sprite.png") no-repeat 6px 0;
+}
+.sponsors li:nth-child(2):hover { 
+	background: url("../img/sprite.png") no-repeat -88px 0;
+}
+ul.sponsors li:nth-child(3):hover {
+	background: url("../img/sprite.png") no-repeat -194px 0;
+}
+ul.sponsors li:nth-child(4):hover {
+	background: url("../img/sprite.png") no-repeat -286px 0;
+}
+ul.sponsors li:nth-child(5):hover {
+	background: url("../img/sprite.png") no-repeat -355px 0;	
+}
+    ul.sponsors li:nth-child(6):hover {
+	background: url("../img/sprite.png") no-repeat -441px 0;
+}
+ul.sponsors li:nth-child(7):hover {
+	background: url("../img/sprite.png") no-repeat -521px 0;
+}
+ul.sponsors li:last-child:hover {
+	background: url("../img/sprite.png") no-repeat -595px 0;
+}
+/*FOOTER*/
+footer {
+	width: 100%;
+	height: 100px;
+	margin: 20px auto 0;	
+	background: #213a4d;
+	font-size: 0;
+}
+footer ul {
+	margin-left: 309px;
+	padding-top: 12px;
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 12px;
+	color: #bec6c9;
+}
+footer ul li {
+	display: inline-block;
+	border-right: 2px solid #bec6c9;
+	letter-spacing: 0.4px;
+	padding: 0 10px;	
+}
+footer ul li:last-child {	
+	border: none;
+}
+footer ul li a {	
+	text-decoration: none;
+	color: #bec6c9;	
+}
+footer ul li:first-child {
+	padding-left: 0;
+}
+footer ul li:nth-child(2),
+footer ul li:nth-child(3) {
+	padding: 0 11px 0 9px;
+}
+footer ul li:nth-child(4) {
+	padding: 0 11px 0 12px;
+}
+footer ul li a:hover {		
+	color: #52abcb;	
+}
+footer p {
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 10px;
+	color: #7f4740;
+	text-align: center;
+	margin-top: 16px;
+	letter-spacing: 0.1px;
+}
+
+/*THE END*/
+
+
+
 
 
 
