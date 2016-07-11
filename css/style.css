@@ -560,14 +560,27 @@ form.right_top .third_col li:first-child {
 /*styles for select-bosex*/
 select {
 	 -webkit-appearance: none;	
+	 position: relative;
 }
-div.arrow {
+select:after {
+	position: relative;
+	float: right;
+	display: block;
+	content: 'nenf ghj.tk';
+    width: 15px;
+	height: 14px;
+	background: white url("../img/select_arrow.png") no-repeat;
+    /*border: 1px solid #d0d0d0;
+    border-top: none;*/
+    
+}
+/*div.arrow {
 	width: 15px;
 	height: 14px;
 	background: white url("../img/select_arrow.png") no-repeat 2px 4px;
     border: 1px solid #d0d0d0;
     border-top: none;
-}
+}*/
 .left_top {
 	position: relative;
 }
