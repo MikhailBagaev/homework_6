@@ -22,9 +22,9 @@ nav.main {
 	height: 19px;
 	border: 1px solid #c1c8cb;
 	border-radius: 10px;
-	background: url("../img/letter.png") no-repeat 83% 33%,
-	            url("../img/sitemap.png") no-repeat 48% 33%,
-	            url("../img/home.png") no-repeat 13% 31%;
+	background: url("../img/letter.png") no-repeat 83% 29%,
+	            url("../img/sitemap.png") no-repeat 47% 26%,
+	            url("../img/home.png") no-repeat 13% 13%;
     margin-right: 8px;
     margin-top: 2px;
     float: right;
@@ -146,8 +146,8 @@ header img {
 }
 /*menu under slider*/
 ul.top_menu {
-	width: 914px;
-	margin: 0 auto;
+	width: 911px;
+	margin: 0 0 0 177px;
 	min-height: 34px;
 	background: linear-gradient(to top, #010101 70%, #505860);
     border-radius: 5px;
@@ -263,8 +263,7 @@ form.left_top header div:nth-child(3) {
 }
 .first_col li p span,
 .third_col li p span {
-	color: #77858b;
-	letter-spacing: 
+	color: #77858b;	
 }
 .third_col li p span {
 	font-size: 8px;
@@ -708,9 +707,9 @@ main > .left header {
 	margin-top: 3px;
 	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 12.73px;
-	font-color: #114165;			
+	color: #114165;			
 }
-main > .left header p {
+main > .left header h2 {
     float: left;
     margin-left: 5px;
     margin-top: 6px;
@@ -722,7 +721,7 @@ main .left section header {
 	margin-top: 14px;
 	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 12.73px;
-	font-color: #114165;	
+	color: #114165;	
 }
 main .left section header div {
 	width: 22px;
@@ -733,11 +732,12 @@ main .left section header div {
     margin-top: 1px;
     float: left;
 }
-main .left section header p {
+main .left section header h3 {
 	font-family: Arial, Tahoma, sans-serif;
 	font-size: 14px;
 	color: #0c3256;
-	margin-left: 4px;	
+	margin-left: 30px;
+	margin-top: 6px;	
 }
 main .left section ul {	
 	margin-left: 37px;	
@@ -799,13 +799,14 @@ figcaption {
 	font-family: Arial, Tahoma, sans-serif;
 	font-size: 16px;
 	color: #114165;
-	font-style: italic;
+	font-style: oblique;
 	font-weight: 900;
 	text-align: center;
-	letter-spacing: -0.2px;
+	letter-spacing: -0.2px;	
 } 
 figcaption span {
     font-size: 12px;
+    font-variant: small-caps;
 }
 figure:nth-child(2) {
 	margin-left: 22px;
@@ -850,7 +851,7 @@ main>.right header {
 	margin-left: 8px;
 	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 12.73px;
-	font-color: #114165;
+	color: #114165;
 	border-top-right-radius: 15px;		
 }
 aside.right header div {
@@ -862,7 +863,7 @@ aside.right header div {
     margin-top: 1px;
     float: left;
 }
-aside.right header p {
+aside.right header h2 {
     float: left;
     margin-left: 5px;
     margin-top: 6px;
@@ -877,7 +878,7 @@ main .right section header {
     margin-left: 24px;
 	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 12.73px;
-	font-color: #114165;	
+	color: #114165;	
 }
 main .right section header div {
 	width: 22px;
@@ -888,8 +889,9 @@ main .right section header div {
     margin-top: 1px;
     float: left;
 }
-main .right section header p {
+main .right section header h3 {
 	margin-top: 7px;
+	margin-left: 30px;
 }
 aside.right section .form {
 	margin-left: 34px;
@@ -932,20 +934,23 @@ main .right section:nth-child(2) header div {
     margin-left: 1px;
     margin-top: 1px;    
 }
+#brand2-1 {
+    margin-top: -5px; 	
+}
 #brand2-2 {
     margin-top: 13px; 	
 }
 #brand2-3 {
-    margin-top: 15px; 	
+    margin-top: -1px; 	
 }
 label[for="brand2-1"] {
-    line-height: 17px;
+    line-height: 18px;
 }
 label[for="brand2-2"] {
     vertical-align: bottom;
 }
 label[for="brand2-3"] {
-    vertical-align: bottom;
+    line-height: 35px;
 }
 aside.right section:nth-child(2) .form {
 	margin-top: 7px;
@@ -961,7 +966,7 @@ input[type="submit"].choice {
     color: #e5e9ea;
     font-style: normal;
     letter-spacing: 0.9px;
-    margin-top: 18px;
+    margin-top: 9px;
     margin-left: 32px;
     box-shadow: 2px 3px 2px -1px #b4b4b4;
 }

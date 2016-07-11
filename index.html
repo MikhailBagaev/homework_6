@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="utf-8">
         <title>Zazor</title>
@@ -26,10 +26,10 @@
             	    <div class="login_signin">
             	        <p><a href="#">забыли пароль?</a></p>
             	        <p><a href="#">регистрация</a></p>
-            	        <form action="#" method="#">
-            	            <input type="submit" value="вход |" required>
+            	        <form action="#" method="post">
+            	            <input type="submit" value="вход |">
             	            <input type="password" name="password" placeholder="пароль" required>
-            	            <input type="text" name="login" placeholder="логин">
+            	            <input type="text" name="login" placeholder="логин" required>
             	        </form>            	    
             	    </div>
             	    <div class="phones">
@@ -38,8 +38,7 @@
             	        <div></div>
             	    </div>
                 </div>
-
-                <img src="img/slider.png" width="100%">
+                <img src="img/slider.png" alt="баннер">
             </header>            
                 <ul class="top_menu">
                     <li><a href="#">о компани</a></li>
@@ -47,18 +46,22 @@
                     <li><a href="#">доставка</a></li>
                     <li><a href="#">статьи</a></li>
                     <li><a href="#">контакты</a></li>
-                    <li><a href="#"><img src="img/koshik.png"></a></li>
+                    <li><a href="#">
+                    <img src="img/koshik.png" alt="корзина"></a></li>
                     <li>
-                        <p>товаров: </span><span>0</p>
+                        <p>товаров: <span></span>0</p>
                     </li>
                     <li>
                         <p>на сумму: <span> 0.00 грн</span></p>
                     </li>                    
-                </ul>
-            
+                </ul>            
         <div class="wrapper">     
-            <form action="#" method="#" name="" class="left_top">
-                <header><div>Диски:</div><div>Поиск по автомобилю</div><div>Шины:</div></header>
+            <form action="#" method="post" name="discs" class="left_top">
+                <header>
+                    <div>Диски:</div>
+                    <div>Поиск по автомобилю</div>
+                    <div>Шины:</div>
+                </header>
                 <ul class="first_col">                
                     <li><p>Марка <span>авто</span>:</p></li>
                     <li><p>Модель<br><span>автомобиля</span>:</p></li>
@@ -81,7 +84,7 @@
                     <li><select name="auto" id="auto_t"></select></li>
                     <li><select name="model" id="model_t"></select></li>
                     <li><select name="year" id="year_t"></select></li>          
-                    <li><select name="complectation_t" id="complectation"></select></li>
+                    <li><select name="complectation" id="complectation-t"></select></li>
                     <li><input type="submit" value="поиск..."></li>
                 </ul>
                 <div class="arrow sel1"></div>
@@ -93,7 +96,7 @@
                 <div class="arrow sel7"></div> 
                 <div class="arrow sel8"></div> 
             </form>               
-            <form action="#" metho="#" name="" class="center_top">
+            <form action="#" method="post" name="tires_search" class="center_top">
                 <header>
                     <p>ПОИСК ШИН</p>
                 </header>
@@ -117,13 +120,13 @@
                 </ul>  
                 <ul>
                     <li><span>/</span><select name="size2" id="size2"></select></li>
-                    <li><li><input type="submit" value="поиск..."></li></li>                	
+                    <li><input type="submit" value="поиск..."></li>                	
                 </ul>
                 <div class="arrow sel9"></div> 
                 <div class="arrow sel10"></div> 
                 <div class="arrow sel11"></div>
             </form>
-            <form action="#" method="#" class="right_top">
+            <form action="#" method="post" class="right_top">
                 <header>
                     <p>поиск дисков</p>
                 </header>
@@ -180,12 +183,12 @@
                 <aside class="left column">
                     <header>
                         <div></div> 
-                        <p>КАТАЛОГ ПРОДУКЦИИ:</p>           
+                        <h2>КАТАЛОГ ПРОДУКЦИИ:</h2>           
                     </header>  
                     <section>
                         <header>
                             <div></div> 
-                            <p>ШИНЫ</p>   
+                            <h3>ШИНЫ</h3>   
                         </header>       
                             <ul>
                                 <li><a href="#">Наименование 1</a></li>
@@ -197,7 +200,7 @@
                     <section>
                         <header>
                             <div></div> 
-                            <p>ДИСКИ</p>   
+                            <h3>ДИСКИ</h3>   
                         </header>       
                             <ul>
                                 <li><a href="#">Наименование 1</a></li>
@@ -209,7 +212,7 @@
                     <section>
                         <header>
                             <div></div> 
-                            <p>БОЛТЫ</p>   
+                            <h3>БОЛТЫ</h3>   
                         </header>       
                             <ul>
                                 <li><a href="#">Наименование 1</a></li>
@@ -293,13 +296,13 @@
                 <aside class="right column">             
                     <header>
                         <div></div> 
-                        <p>БРЕНДЫ:</p>   
+                        <h2>БРЕНДЫ:</h2>   
                     </header> 
-                    <form action="#" method="">
+                    <form action="#" method="post">
                     <section>                    
                         <header>
                             <div></div> 
-                            <p>ШИНЫ</p>   
+                            <h3>ШИНЫ</h3>   
                         </header> 
                             <div class="form">           
                                     <input type="checkbox" name="brand1" id="brand1"><label for="brand1">Бренд 1</label><br>
@@ -310,7 +313,7 @@
                     <section>
                         <header>
                             <div></div> 
-                            <p>ДИСКИ</p>   
+                            <h3>ДИСКИ</h3>   
                         </header>                        
                                 <div class="form">
                                     <input type="checkbox" name="brand2-1" id="brand2-1"><label for="brand2-1">Бренд 1</label><br>
