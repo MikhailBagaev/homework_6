@@ -17,25 +17,28 @@ header.head_page {
 div.top_line {	
 	margin-bottom: 10px;
 }
-nav.main {
+
+ul.site_nav {
 	width: 74px;
 	height: 19px;
 	border: 1px solid #c1c8cb;
-	border-radius: 10px;
-	background: url("../img/letter.png") no-repeat 83% 29%,
-	            url("../img/sitemap.png") no-repeat 47% 26%,
-	            url("../img/home.png") no-repeat 13% 13%;
+	border-radius: 10px;	
     margin-right: 8px;
     margin-top: 2px;
     float: right;
     box-shadow: 1px 2px 1px -1px #b4b4b4,
                 -1px -1px 1px -1px #b4b4b4;
+    background: url("../img/letter.png") no-repeat 83% 29%,
+	            url("../img/sitemap.png") no-repeat 47% 26%,
+	            url("../img/home.png") no-repeat 13% 13%;            
 }
-nav.main a div {
+
+ul.site_nav li {
 	width: 24px;
 	height: 18px;
 	float: right;
 }
+
 div.login_signin {
 	background: url("../img/nevalyashka.png") no-repeat 6px 4px,linear-gradient(to top, #0c3357, #1f6787);
     overflow: hidden;
@@ -93,7 +96,6 @@ input[type="text"] {
 	margin-top: 4px;
 	margin-bottom: 6px;
     padding: 0 4px 0 4px;
-
 }
 input[type="text"]::-webkit-input-placeholder,
 input[type="password"]::-webkit-input-placeholder {
@@ -292,14 +294,36 @@ ul.first_col li:nth-child(3) {
 .fourth_col li select {
 	width: 103px;
 	height: 17px;
+	margin-bottom: 5px;	
+} 
+.center_top li select {
+	width: 103px;
+	height: 17px;
+	margin-bottom: 5px;
+}
+select {
+	-webkit-appearance: none;
+	width: 103px;
+	height: 17px;
 	margin-bottom: 5px;
 	border-bottom: none;
 	border-right: none;
 	font-family: Arial;
 	font-size: 11px;
-} 
-#year {
+	box-shadow: inset .5px .9px 1px rgba(0, 0, 0, .75);
+    background: url("../img/select_arrow.png") 87px  5px no-repeat,
+                url("../img/bor_sel_box.png") 81px -2px no-repeat;
+}
+
+select#year {
 	 width: 57px;
+	 background: url("../img/select_arrow.png") 43px  5px no-repeat,
+                 url("../img/bor_sel_box.png") 37px -2px no-repeat;
+}
+select#year_t {
+	 width: 57px;
+	 background: url("../img/select_arrow.png") 43px  5px no-repeat,
+                 url("../img/bor_sel_box.png") 37px -2px no-repeat;
 }
 option {
 	font-family: Arial;
@@ -408,12 +432,16 @@ form.center_top ul li:nth-child(3) p {
 	border-bottom: none;
 	border-right: none;
 	margin-right: 6px;
+	background: url("../img/select_arrow.png") 37px  4px no-repeat,
+                 url("../img/bor_sel_box.png") 32px -2px no-repeat;
 }   
 #radius {
 	width: 44px;
 	height: 17px;
-	margin-top: 7px;
-	margin-left: 6px;	
+	margin-top: 2px;
+	margin-left: 6px;
+	background: url("../img/select_arrow.png") 30px  4px no-repeat,
+                 url("../img/bor_sel_box.png") 25px -2px no-repeat;	
 } 
 option {
 	font-family: Arial;
@@ -437,15 +465,15 @@ form.center_top input[type="checkbox"] li {
 	margin: 0;
 }
 #summer {
-	margin-top: 8px;
+	margin-top: -1px;
 	margin-left: 5px;
 }
 #winter {
-	margin-top: -2px;
+	margin-top: -5px;
 	margin-left: 5px;
 }
 #all_seasons {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 	margin-left: 5px;	
 }
 form.center_top li label {
@@ -456,17 +484,25 @@ form.center_top li label {
 }
 form.center_top li:nth-child(3) label {
 	vertical-align: bottom;	
+	line-height: 15px;
+}
+form.center_top li:nth-child(4) label {
+	vertical-align: bottom;	
+	line-height: 15px;
 }
 form.center_top li:nth-child(5) label {
-	vertical-align: top;	
+	vertical-align: top;
+	line-height: 9px;	
 }
 #size2 {
 	margin-top: 8px;
-	margin-left: 7px;
-	height: 18px;	
+	margin-left: 2px;
+	height: 18px;
+	background: url("../img/select_arrow.png") 37px  4px no-repeat,
+                 url("../img/bor_sel_box.png") 31px -2px no-repeat;	
 }
 form.center_top input[type="submit"] {
-	margin-top: 68px;
+	margin-top: 63px;
 	margin-left: 8px;
 }
 /*styles for right top form*/
@@ -512,20 +548,26 @@ form.right_top .first_col li p {
 	border-bottom: none;
 	margin-top: 5px;
 	margin-left: 5px;
+	background: url("../img/select_arrow.png") 41px  4px no-repeat,
+                 url("../img/bor_sel_box.png") 35px -2px no-repeat;
 }
 #num_fix_holes {
 	width: 50px;
 	height: 17px;
 	border-bottom: none;
-	margin-top: 14px;
+	margin-top: 10px;
 	margin-left: 5px;
+	background: url("../img/select_arrow.png") 35px  4px no-repeat,
+                 url("../img/bor_sel_box.png") 29px -2px no-repeat;
 }
 #diam_fix_holes {
 	width: 57px;
 	height: 15px;
 	border-bottom: none;
-    margin-top: 15px;
+    margin-top: 9px;
 	margin-left: 5px;
+	background: url("../img/select_arrow.png") 42px  5px no-repeat,
+                 url("../img/bor_sel_box.png") 37px -2px no-repeat;
 }
 form.right_top ul.third_col {
 	margin-left: 75px;
@@ -540,7 +582,9 @@ form.right_top .third_col li p {
 	width: 57px;
 	height: 15px;
 	border-bottom: none;
-	margin-top: 5px;	
+	margin-top: 1px;
+	background: url("../img/select_arrow.png") 42px  4px no-repeat,
+                 url("../img/bor_sel_box.png") 36px -2px no-repeat;	
 }
 form.right_top .third_col li:nth-child(3) {
 	margin-top: 8px;
@@ -557,30 +601,8 @@ form.right_top .third_col li:nth-child(2) {
 form.right_top .third_col li:first-child {
 	margin-left: -2px;	
 }
-/*styles for select-bosex*/
-select {
-	 -webkit-appearance: none;	
-	 position: relative;
-}
-select:after {
-	position: relative;
-	float: right;
-	display: block;
-	content: 'nenf ghj.tk';
-    width: 15px;
-	height: 14px;
-	background: white url("../img/select_arrow.png") no-repeat;
-    /*border: 1px solid #d0d0d0;
-    border-top: none;*/
-    
-}
-/*div.arrow {
-	width: 15px;
-	height: 14px;
-	background: white url("../img/select_arrow.png") no-repeat 2px 4px;
-    border: 1px solid #d0d0d0;
-    border-top: none;
-}*/
+
+
 .left_top {
 	position: relative;
 }
@@ -660,7 +682,9 @@ select:after {
 	width: 57px;
 	height: 15px;
 	border-bottom: none;
-	margin-top: 5px;	
+	margin-top: 2px;
+	background: url("../img/select_arrow.png") 42px  4px no-repeat,
+                 url("../img/bor_sel_box.png") 36px -2px no-repeat;	
 }
 form.right_top .third_col li:last-child {
 	padding-bottom: 3px;
@@ -668,7 +692,7 @@ form.right_top .third_col li:last-child {
 
 form.right_top input[type="submit"] {
 	margin-left: 10px;
-	margin-top: 6px;	
+	margin-top: 1px;	
 }
 main:before {
 	content: '';
