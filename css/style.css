@@ -89,13 +89,12 @@ div.login_signin input[type="submit"]:hover {
 	cursor: pointer;
 }
 input[type="password"],
-input[type="text"] {
-	
+input[type="text"] {	
 	width: 103px;
 	height: 13px;
-	margin-top: 4px;
+	margin-top: 3px;
 	margin-bottom: 6px;
-    padding: 0 4px 0 4px;
+    padding: 0 5px 0 4px;
 }
 input[type="text"]::-webkit-input-placeholder,
 input[type="password"]::-webkit-input-placeholder {
@@ -112,6 +111,7 @@ input[type="password"]::-moz-placeholder {
 }
 input[type="password"] {
 	margin-left: 5px;
+	letter-spacing: -0.2px;	
 }
 div.phones {
 	float: right;
@@ -147,9 +147,14 @@ header img {
 	clear: both;
 }
 /*menu under slider*/
+.wrapper_for_menu {
+	width: 920px;
+	margin: 0 auto;
+}
 ul.top_menu {
 	width: 911px;
-	margin: 0 0 0 177px;
+	margin: 0 auto;
+	/*margin: 0 auto;*/
 	min-height: 34px;
 	background: linear-gradient(to top, #010101 70%, #505860);
     border-radius: 5px;
@@ -601,82 +606,9 @@ form.right_top .third_col li:nth-child(2) {
 form.right_top .third_col li:first-child {
 	margin-left: -2px;	
 }
-
-
 .left_top {
 	position: relative;
 }
-.arrow {
-	position: absolute;
-}
-.sel1 {	
-	left: 180px;
-	top: 23px;
-}
-.sel2 {
-    left: 180px;
-    top: 45px;
-} 
-.sel3 {
-    left: 135px;
-    top: 67px;
-} 
-.sel4 {
-    left: 180px;
-    top: 89px;
-} 
-.sel5 {
-	left: 384px;
-	top: 21px;
-}
-.sel6 {
-	left: 384px;
-	top: 43px;
-}
-.sel7 {
-    left: 339px;
-    top: 65px;
-} 
-.sel8 {
-	left: 384px;
-	top: 87px;
-}
-.arrow.sel9 {
-	left: 93px;
-	top: 23px;
-	width: 13px;
-}
-.arrow.sel10 {
-	left: 87px;
-	top: 48px;
-	width: 13px;
-}
-.arrow.sel11 {
-	left: 160px;
-	top: 24px;
-	width: 13px;
-} 
-.sel12 {
-	left: 144px;
-	top: 21px;	
-} 
-.arrow.sel13 {
-	left: 138px;
-	top: 51px;
-	height: 16px;	
-} 
-.arrow.sel14 {
-	left: 145px;
-	top: 83px;		
-} 
-.arrow.sel15 {
-	left: 227px;
-	top: 44px;		
-} 
-.arrow.sel16 {
-	left: 227px;
-	top: 88px;		
-} 
 /*end styles of selects*/
 #ET {
 	width: 57px;
@@ -812,6 +744,11 @@ div.gallery {
 	margin-bottom: 37px;
 	border-radius: 3px;
 }
+.tube,
+.tube2,
+.tube3 {
+	height: 200px;
+}
 figure {
 	width: 146px;
 	float: left;
@@ -829,7 +766,7 @@ figure header p:last-child {
     color: #1f2528;
 }
 figure {
-	margin-top: 15px;
+	/*margin-top: 15px;*/
 	margin-left: 20px;	
 }
 figcaption {
@@ -839,8 +776,91 @@ figcaption {
 	font-style: oblique;
 	font-weight: 900;
 	text-align: center;
-	letter-spacing: -0.2px;	
+	letter-spacing: -0.2px; 
+	word-spacing: -1px;
+	display: block;
+	padding-top: 2px;   
 } 
+figcaption span {	
+	font-size: 13px;
+	letter-spacing: -0.1px;
+	padding: 0 0 0 0;
+}
+.tube figure:first-child {
+	margin-top: 15px;
+	margin-left: 20px;
+}
+.tube figure:first-child figcaption {
+	padding: 1px 0 1px 9px;
+}
+.tube figure:nth-child(2) {
+	margin-top: 15px;
+	margin-left: 22px;
+	margin-bottom: 1px;
+}
+.tube figure:nth-child(2) figcaption {
+	padding: 2px 0 0 10px;
+}
+.tube figure:nth-child(3) {
+	margin-top: 15px;
+	margin-left: 22px;
+}
+.tube figure:nth-child(3) figcaption {
+	padding: 1px 0 0 11px;
+}
+.tube2 figure:nth-child(1) {
+	margin-top: 17px;
+	margin-left: 20px;
+}
+.tube2 figure:nth-child(1) figcaption {
+	padding: 0 0 0 9px;
+}
+.tube2 figure:nth-child(2) {
+	margin-top: 16px;
+	margin-left: 21px;
+}
+.tube2 figure:nth-child(2) figcaption {
+	padding: 1px 0 0 13px;
+}
+.tube2 figure:nth-child(3) {
+	margin-top: 16px;
+	margin-left: 23px;
+}
+.tube2 figure:nth-child(3) figcaption {
+	padding: 1px 0 0 12px;
+}
+
+.tube3 figure:nth-child(1) {
+	margin-top: 21px;
+	margin-left: 20px;
+}
+.tube3 figure:nth-child(1) figcaption {
+	padding: 0 0 0 10px;
+}
+.tube3 figure:nth-child(2) {
+	margin-top: 21px;
+	margin-left: 22px;
+}
+.tube3 figure:nth-child(2) figcaption {
+	padding: 0 0 0 11px;
+}
+.tube3 figure:nth-child(3) {
+	margin-top: 21px;
+	margin-left: 22px;
+}
+.tube3 figure:nth-child(3) figcaption {
+	padding: 0 0 0 12px;
+}
+
+
+/*figure:nth-child(2) figcaption {
+	padding: 1px 0 0 1px;
+}
+figcaption:nth-child(3),
+figcaption:nth-child(5),
+figcaption:nth-child(6), {
+
+}
 figcaption span {
     font-size: 12px;
     font-variant: small-caps;
@@ -863,7 +883,7 @@ figure:nth-child(4) {
 	margin-left: 20px;
 }
 figure:nth-child(5) {
-	margin-top: 26px;
+	margin-top: 25px;
 	margin-left: 21px;
 }
 figure:nth-child(6) {	
@@ -878,6 +898,7 @@ figure:nth-child(8) {
 figure:nth-child(9) {
 	margin-left: 22px;
 }
+*/
 
 
 /*main 3rd column*/
